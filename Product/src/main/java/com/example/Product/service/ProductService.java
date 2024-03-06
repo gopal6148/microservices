@@ -24,5 +24,8 @@ public class ProductService {
 	public Products findTheProductById(int id) {
 		return pr.findById(id).orElse(null);
 	}
+	public String deleteproduct(int id) {
+		return "remove product succesfully "+id;
+	}
 
 }
