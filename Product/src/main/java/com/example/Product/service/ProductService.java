@@ -28,5 +28,9 @@ public class ProductService {
 		pr.deleteById(id);
 		return "remove product succesfully "+id;
 	}
+	public Products updateProduct(Products pro) {
+		 return pr.save(pro);
+	}
+	
 
 }
