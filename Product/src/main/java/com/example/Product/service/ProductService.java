@@ -25,6 +25,7 @@ public class ProductService {
 		return pr.findById(id).orElse(null);
 	}
 	public String deleteproduct(int id) {
+		pr.deleteById(id);
 		return "remove product succesfully "+id;
 	}
 
